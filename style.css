@@ -51,3 +51,17 @@ a:focus-visible,button:focus-visible{outline:3px solid var(--blue);outline-offse
 @media(max-width:940px){.hero-content{grid-template-columns:1fr 300px;gap:22px}.nav-links{gap:14px}#projects{grid-template-columns:1fr 1fr}.timeline{grid-template-columns:1fr 1fr}}
 @media(max-width:680px){.navbar{flex-direction:column;gap:12px}.nav-links{justify-content:center;gap:12px}.hero{min-height:0;padding-bottom:48px}.hero-content{grid-template-columns:1fr;margin:44px auto 0}.hero-text h1{font-size:2.35rem}.hero-card{margin-top:15px}.section{padding:45px 0}.cards-grid,#projects,.timeline{grid-template-columns:1fr}.section h2{font-size:1.85rem}}
 @media(prefers-reduced-motion:reduce){*,*::before,*::after{scroll-behavior:auto!important;transition:none!important}.reveal{opacity:1;transform:none}}
+
+/* Hero layout inspired by the approved cream-and-blue mockup */
+.hero-content{grid-template-columns:minmax(220px,.85fr) minmax(320px,1.3fr) minmax(210px,.85fr);gap:28px}
+.hero-photo-wrap{position:relative;min-height:440px;display:flex;align-items:center;justify-content:center}
+.hero-photo-shape{position:absolute;border-radius:35px;z-index:0}
+.shape-one{width:90%;height:84%;top:5%;left:0;background:#dfe8fa;transform:rotate(-7deg)}
+.shape-two{width:83%;height:85%;bottom:3%;right:0;background:#eee7db;transform:rotate(7deg)}
+.hero-portrait{position:relative;z-index:1;display:block;width:100%;max-width:315px;aspect-ratio:3/4;object-fit:cover;object-position:center 20%;border-radius:28px;border:6px solid rgba(255,255,255,.8);box-shadow:0 20px 40px rgba(29,49,84,.16)}
+.hero-card.info-card{text-align:left;max-width:330px;padding:24px}
+.info-item+.info-item{border-top:1px solid #e8ebf2;margin-top:15px;padding-top:15px}
+.info-card .info-item h3{font-family:'DM Sans',Arial,sans-serif;font-size:.98rem;margin:0 0 3px}
+.info-card .info-item p{font-size:.9rem;margin:0;color:#56637a}
+@media(max-width:1050px){.hero-content{grid-template-columns:minmax(210px,.8fr) minmax(280px,1.2fr)}.info-card{grid-column:1/-1;justify-self:stretch!important;max-width:none!important;display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:15px}.info-item+.info-item{margin:0;padding:0;border:0}}
+@media(max-width:680px){.hero-content{grid-template-columns:1fr}.hero-photo-wrap{order:1;max-width:300px;width:100%;margin:0 auto}.hero-text{order:2}.hero-card.info-card{order:3;display:block}.info-item+.info-item{border-top:1px solid #e8ebf2;margin-top:15px;padding-top:15px}}
