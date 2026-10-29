@@ -15,7 +15,7 @@
         <li><a href="#skills">Compétences</a></li>
         <li><a href="#projects">Projets</a></li>
         <li><a href="#formation">Formation</a></li>
-        <li><a href="#contact">Contact</a></li>
+        <li><a href="#contact">Contact</a></li><li><a class="nav-cv" href="cv.html">Mon CV</a></li>
       </ul>
     </nav>
 
@@ -31,7 +31,7 @@
         <p>Je recherche un stage de fin de Master 2 en traitement automatique des langues (TAL), notamment autour du traitement de données textuelles et de la parole.</p>
         <div class="hero-buttons">
           <a class="btn primary" href="#projects">Voir mes projets</a>
-          <a class="btn secondary" href="#contact">Me contacter</a>
+          <a class="btn secondary" href="cv.html">Consulter mon CV</a><a class="btn secondary" href="https://www.linkedin.com/in/zohr%C3%A9-shafiee-1b58731a2/" target="_blank" rel="noopener noreferrer">LinkedIn ↗</a>
         </div>
       </div>
       <aside class="hero-card info-card">
@@ -46,23 +46,8 @@
   <main class="container">
     <section id="about" class="section reveal">
       <h2>À propos</h2>
-      <p>
-        Mon parcours a commencé par des études de traduction française, avant de se poursuivre
-        en sciences du langage, puis en traitement automatique des langues.
-      </p>
-      <p>
-        Actuellement en Master 2 à l'Université Grenoble Alpes, j'associe mes connaissances
-        linguistiques à la programmation et à l'analyse de données langagières.
-      </p>
-      <p>
-        Au cours de mes projets universitaires, j'ai travaillé en équipe sur des applications web,
-        la classification de textes et un projet d'évaluation de la reconnaissance automatique
-        de la parole (ASR).
-      </p>
-      <p>
-        Je recherche un stage de fin d'études pour approfondir mes compétences
-        et participer à des projets concrets en TAL.
-      </p>
+      <p>De la traduction française aux sciences du langage, puis au TAL, mon parcours relie l'analyse linguistique à la programmation. À l'Université Grenoble Alpes, je développe des compétences en traitement de corpus, classification de textes et évaluation de systèmes de reconnaissance vocale.</p>
+      <p>Je souhaite contribuer à un projet concret en TAL/NLP lors d'un stage de fin d'études, en associant rigueur linguistique, expérimentation et développement.</p>
     </section>
 
     <section id="skills" class="section reveal">
@@ -77,12 +62,12 @@
           <p>Prétraitement de textes, analyse de corpus, classification de textes, analyse phonologique</p>
         </div>
         <div class="card">
-          <h3>Machine Learning – notions</h3>
-          <p>Apprentissage supervisé, initiation à Scikit-learn et aux modèles Transformers</p>
+          <h3>Apprentissage automatique et NLP</h3>
+          <p>Classification supervisée de textes, expérimentation avec des modèles Transformers, évaluation des prédictions</p>
         </div>
         <div class="card">
           <h3>Bibliothèques et outils utilisés</h3>
-          <p>Pandas, NLTK, spaCy, Hugging Face Transformers, Jupyter Notebook, Git/GitHub, SQLite</p>
+          <p>Pandas, NLTK, spaCy, Hugging Face Transformers, JiWER, Jupyter Notebook, Git/GitHub, SQLite</p>
         </div>
       </div>
     </section>
@@ -93,9 +78,7 @@
       <div class="project-card">
         <h3>Phonorama – Application web d’analyse phonologique</h3>
         <p>
-          Projet universitaire réalisé en équipe de cinq personnes. Participation au
-          développement de l'application, notamment avec JavaScript,
-          PHP et SQLite.
+          Application web destinée à accompagner les enseignants de FLE dans le travail sur la prononciation. <strong>Ma contribution :</strong> développement de fonctionnalités avec JavaScript et PHP et travail avec SQLite.
         </p>
         <span class="badge">HTML/CSS</span>
         <span class="badge">JavaScript</span>
@@ -107,22 +90,18 @@
       <div class="project-card">
         <h3>Gestion des dictées – Application web éducative</h3>
         <p>
-          Application développée en équipe dans le cadre du cours Programmation Web et Bases de données,
-          avec des espaces pour enseignants et chercheurs. J'ai principalement contribué
-          aux fonctionnalités liées à l'affichage et au traitement des résultats des élèves.
-          Des tests locaux en Python ont également été réalisés pour l'analyse automatique des réponses.
+          Application web pour enseignants et chercheurs. <strong>Ma contribution :</strong> affichage des résultats des élèves, traitement des réponses avec JavaScript et PHP, et tests locaux d'analyse automatique en Python.
         </p>
         <span class="badge">JavaScript</span>
         <span class="badge">PHP</span>
         <span class="badge">Python</span>
-        <p><a href="https://github.com/zohre-shafiee/gestion_des_dict-es" target="_blank" rel="noopener noreferrer">Voir sur GitHub ↗</a></p>
+        <p><a href="https://github.com/zohre-shafiee/gestion_des_dict-es" target="_blank" rel="noopener noreferrer">Code GitHub ↗</a> · <a href="http://i31.univ-grenoble-alpes.fr/~l3_gr16/PWTAL/ProjetWeb-Groupe1/index.php" target="_blank" rel="noopener noreferrer">Voir l’application ↗</a></p>
       </div>
 
       <div class="project-card">
         <h3>Classification de textes – ParlaCAP</h3>
         <p>
-          Projet universitaire en équipe de classification supervisée de textes
-          à partir du corpus ParlaCAP, avec Python et un modèle Transformer.
+          Classification supervisée de discours parlementaires à partir du corpus ParlaCAP. <strong>Travail en équipe :</strong> préparation des données, expérimentation et évaluation de modèles Transformers avec Python.
         </p>
         <span class="badge">Python</span>
         <span class="badge">Transformers</span>
@@ -131,9 +110,7 @@
       <div class="project-card">
         <h3>Évaluation de la reconnaissance automatique de la parole (ASR)</h3>
         <p>
-          Projet universitaire en équipe : comparaison de transcriptions automatiques
-          et manuelles, normalisation des textes et calcul du Word Error Rate (WER).
-          Le code public utilise uniquement des données fictives pour préserver la confidentialité.
+          Évaluation de transcriptions produites par un système ASR à partir de références manuelles. <strong>Travail réalisé :</strong> normalisation des textes, calcul du Word Error Rate (WER) et identification des substitutions, suppressions et insertions avec Python et JiWER. L’exemple public repose uniquement sur des données fictives.
         </p>
         <span class="badge">Python</span>
         <span class="badge">JiWER</span>
