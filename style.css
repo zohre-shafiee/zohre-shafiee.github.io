@@ -127,3 +127,7 @@ body.cv-page .cv-actions{width:min(820px,calc(100% - 56px))}
   body.cv-page .cv-sheet section p{margin:4px 0 6px}
   body.cv-page .cv-sheet h2{margin:9px 0 4px}
 }
+
+/* Separate tool list on CV project entries */
+.cv-sheet .project-tools{display:block;margin-top:3px;color:#526b8a;font-size:.96em;font-weight:500;text-align:left}
+@media print{.cv-sheet .project-tools{margin-top:2px}}
