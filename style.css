@@ -131,3 +131,16 @@ body.cv-page .cv-actions{width:min(820px,calc(100% - 56px))}
 /* Separate tool list on CV project entries */
 .cv-sheet .project-tools{display:block;margin-top:3px;color:#526b8a;font-size:.96em;font-weight:500;text-align:left}
 @media print{.cv-sheet .project-tools{margin-top:2px}}
+
+/* CV: justify body text consistently, including project descriptions and print/PDF */
+body.cv-page .cv-sheet section p{
+  text-align:justify !important;
+  text-align-last:left;
+  text-justify:inter-word;
+  hyphens:auto;
+}
+body.cv-page .cv-sheet section p strong,
+body.cv-page .cv-sheet section p .project-tools{white-space:normal}
+@media print{
+  body.cv-page .cv-sheet section p{text-align:justify !important;text-align-last:left}
+}
