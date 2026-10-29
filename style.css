@@ -154,3 +154,7 @@ body.cv-page .cv-sheet section p .project-tools{white-space:normal}
 .cv-actions .lang-switch a{padding:5px 9px;text-decoration:none}
 @media(max-width:940px){.navbar{flex-wrap:wrap}.navbar .lang-switch{margin-left:auto}}
 @media(max-width:680px){.navbar .lang-switch{margin:0 auto}.cv-actions{flex-wrap:wrap;justify-content:center}.cv-actions .lang-switch{order:1}}
+
+/* Separate personal contribution from project summary */
+.project-card .project-contribution{margin-top:12px;margin-bottom:12px}
+.project-card .project-contribution strong{display:inline}
