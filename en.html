@@ -56,27 +56,49 @@
       <div class="cards-grid">
         <div class="card">
           <h3>Programming and web development</h3>
-          <p>Python, JavaScript, PHP, HTML, CSS, SQL</p>
+          <ul class="skill-list">
+            <li><span class="skill-name">Python</span><span class="skill-proj"><a href="#projet-parlacap">ParlaCAP</a><a href="#projet-asr">ASR evaluation</a><a href="#projet-dictees">Dictation app</a></span></li>
+            <li><span class="skill-name">JavaScript</span><span class="skill-proj"><a href="#projet-phonorama">Phonorama</a><a href="#projet-dictees">Dictation app</a></span></li>
+            <li><span class="skill-name">PHP</span><span class="skill-proj"><a href="#projet-phonorama">Phonorama</a><a href="#projet-dictees">Dictation app</a></span></li>
+            <li><span class="skill-name">HTML / CSS</span><span class="skill-proj"><a href="#projet-phonorama">Phonorama</a><a href="#projet-dictees">Dictation app</a></span></li>
+            <li><span class="skill-name">SQL (SQLite, MySQL)</span><span class="skill-proj"><a href="#projet-phonorama">Phonorama</a></span></li>
+          </ul>
         </div>
         <div class="card">
           <h3>Natural Language Processing</h3>
-          <p>Text preprocessing, corpus analysis, text classification, phonological analysis</p>
+          <ul class="skill-list">
+            <li><span class="skill-name">Text preprocessing</span><span class="skill-proj"><a href="#projet-parlacap">ParlaCAP</a><a href="#projet-asr">ASR evaluation</a></span></li>
+            <li><span class="skill-name">Text classification</span><span class="skill-proj"><a href="#projet-parlacap">ParlaCAP</a></span></li>
+            <li><span class="skill-name">Phonological analysis</span><span class="skill-proj"><a href="#projet-phonorama">Phonorama</a></span></li>
+            <li><span class="skill-name">Corpus analysis</span><span class="skill-proj"><span class="skill-note">DiachroRom</span></span></li>
+          </ul>
         </div>
         <div class="card">
           <h3>Machine learning and NLP</h3>
-          <p>Supervised learning, text classification, fine-tuning Transformer models, model evaluation</p>
+          <ul class="skill-list">
+            <li><span class="skill-name">Supervised learning</span><span class="skill-proj"><a href="#projet-parlacap">ParlaCAP</a></span></li>
+            <li><span class="skill-name">Transformer models (CamemBERT)</span><span class="skill-proj"><a href="#projet-parlacap">ParlaCAP</a></span></li>
+            <li><span class="skill-name">Evaluation (accuracy, F1, WER)</span><span class="skill-proj"><a href="#projet-parlacap">ParlaCAP</a><a href="#projet-asr">ASR evaluation</a></span></li>
+          </ul>
         </div>
         <div class="card">
           <h3>Libraries and tools</h3>
-          <p>Pandas, NLTK, spaCy, Hugging Face Transformers, JiWER, Jupyter Notebook, Git/GitHub, SQLite</p>
+          <ul class="skill-list">
+            <li><span class="skill-name">Hugging Face Transformers</span><span class="skill-proj"><a href="#projet-parlacap">ParlaCAP</a></span></li>
+            <li><span class="skill-name">JiWER</span><span class="skill-proj"><a href="#projet-asr">ASR evaluation</a></span></li>
+            <li><span class="skill-name">SQLite, MySQL, phpMyAdmin</span><span class="skill-proj"><a href="#projet-phonorama">Phonorama</a></span></li>
+            <li><span class="skill-name">Git / GitHub</span><span class="skill-proj"><a href="#projet-phonorama">Phonorama</a><a href="#projet-dictees">Dictation app</a><a href="#projet-parlacap">ParlaCAP</a><a href="#projet-asr">ASR evaluation</a></span></li>
+            <li><span class="skill-name">Pandas, NLTK, spaCy, Jupyter Notebook</span><span class="skill-proj"></span></li>
+          </ul>
         </div>
       </div>
+      <p class="skills-hint">Click a project to see where each skill was put into practice.</p>
     </section>
 
     <section id="projects" class="section reveal">
       <h2>Selected Projects</h2>
 
-      <div class="project-card">
+      <div class="project-card" id="projet-phonorama">
         <h3>Phonorama — A pronunciation support tool</h3>
         <p>
           Developed with a five-person team in collaboration with Aster Formation for a project management course. The tool compares French phoneme inventories with those of other languages, drawing mainly on PHOIBLE data and displaying consonants and vowels in interactive charts to support pronunciation teaching. </p><p class="project-contribution"><strong>My role:</strong> I helped build application features using JavaScript and PHP and worked with the SQLite database. I then migrated the database to MySQL, deployed the app on the university server, fixed how sounds are placed in the charts and redesigned the interface.
@@ -89,7 +111,7 @@
         <p><a href="https://github.com/zohre-shafiee/phonorama" target="_blank" rel="noopener noreferrer">GitHub code ↗</a> · <a href="http://i3l.univ-grenoble-alpes.fr/~l3_gr16/PWTAL/projet-pannorama/phonorama-main/phonorama.html" target="_blank" rel="noopener noreferrer">View the web app ↗</a></p>
       </div>
 
-      <div class="project-card">
+      <div class="project-card" id="projet-dictees">
         <h3>Dictation Management — A tool for teachers and researchers</h3>
         <p>
           An educational platform where teachers can manage dictations, review student results and explore writing errors. The team combined a PHP/MySQL web application with a Python linguistic analysis pipeline using Stanza and OCR-based text extraction. </p><p class="project-contribution"><strong>My role:</strong> I worked on displaying student results and handling responses with JavaScript and PHP. I also tested automated response analysis locally in Python.
@@ -100,7 +122,7 @@
         <p><a href="https://github.com/zohre-shafiee/gestion-des-dictees" target="_blank" rel="noopener noreferrer">GitHub code ↗</a> · <a href="http://i3l.univ-grenoble-alpes.fr/~l3_gr16/PWTAL/Zohre/ProjetWeb-Groupe1/index.php" target="_blank" rel="noopener noreferrer">View the web app ↗</a></p>
       </div>
 
-      <div class="project-card">
+      <div class="project-card" id="projet-parlacap">
         <h3>ParlaCAP — Classifying parliamentary speeches</h3>
         <p>
           A two-person NLP project with Camille Benoit-Guyod, focused on predicting political party labels from French parliamentary speeches. We compared five DistilCamemBERT and CamemBERT configurations, including approaches to class imbalance. Our best reported run reached 56.69% accuracy and 48.29% macro-F1. </p><p class="project-contribution"><strong>My role:</strong> preparing the data, fine-tuning Transformer models and evaluating their performance in Python.
@@ -109,7 +131,7 @@
         <span class="badge">Transformers</span>
         <p><a href="https://github.com/zohre-shafiee/Projet-python-ParlaCAP" target="_blank" rel="noopener noreferrer">View on GitHub ↗</a></p>
       </div>
-      <div class="project-card">
+      <div class="project-card" id="projet-asr">
         <h3>Evaluating Automatic Speech Recognition (ASR)</h3>
         <p>
           In a four-person research project, we evaluated TADDDAM's French speech transcripts against manual references from two native and two non-native speakers. Observed Word Error Rates ranged from 9.96% to 19.41%. With only four participants, the results are exploratory rather than generalizable. </p><p class="project-contribution"><strong>My role:</strong> text normalization, calculating Word Error Rate (WER), and identifying substitutions, deletions and insertions with Python and JiWER. The public repository contains fictional sample data only.
