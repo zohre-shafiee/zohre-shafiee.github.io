@@ -40,7 +40,7 @@
         <div class="info-item"><h3>Master's in Language Technology</h3><p>Université Grenoble Alpes</p></div>
         <div class="info-item"><h3>NLP • AI • Linguistics</h3><p>Text and speech processing · Python</p></div>
         <div class="info-item"><h3>Languages</h3><p>French • English • Persian</p></div>
-        <div class="info-item"><h3>Areas of interest</h3><p>LLMs • RAG • Applied AI • Language technology solutions</p></div>
+        <div class="info-item"><h3>Areas of interest</h3><p>LLMs • RAG • AI agents • Applied AI • Language technology solutions</p></div>
       </aside>
     </div>
   </header>
@@ -64,17 +64,31 @@
         </div>
         <div class="card">
           <h3>Machine learning and NLP</h3>
-          <p>Supervised learning, text classification, fine-tuning Transformer models, model evaluation</p>
+          <p>Supervised learning, text classification, fine-tuning Transformer models, model evaluation, RAG and tool-calling LLM agents</p>
         </div>
         <div class="card">
           <h3>Libraries and tools</h3>
-          <p>Pandas, NLTK, spaCy, Hugging Face Transformers, JiWER, Jupyter Notebook, Git/GitHub, SQLite</p>
+          <p>Pandas, NLTK, spaCy, Hugging Face Transformers, JiWER, LangChain, ChromaDB, Gradio, WNTR, Jupyter Notebook, Git/GitHub, SQLite</p>
         </div>
       </div>
     </section>
 
     <section id="projects" class="section reveal">
       <h2>Selected Projects</h2>
+
+      <div class="project-card">
+        <h3>EPANET Assistant — RAG and AI agent for hydraulic simulation</h3>
+        <p>
+          Personal project: a prototype assistant for users of EPANET, the U.S. EPA software for simulating water distribution networks. For each question, an LLM agent decides whether to search the EPANET 2.2 user manual (with page citations), run a hydraulic simulation of the Net3 example network with WNTR, or combine both. </p><p class="project-contribution"><strong>What I built:</strong> a RAG pipeline (multilingual embeddings, ChromaDB), tool descriptions in JSON Schema, an agent loop with a round limit, a Gradio interface and documented tests.
+        </p>
+        <span class="badge">Python</span>
+        <span class="badge">LangChain</span>
+        <span class="badge">ChromaDB</span>
+        <span class="badge">LLM agents</span>
+        <span class="badge">WNTR</span>
+        <span class="badge">Gradio</span>
+        <p><a href="https://github.com/zohre-shafiee/epanet-assistant" target="_blank" rel="noopener noreferrer">View on GitHub ↗</a></p>
+      </div>
 
       <div class="project-card">
         <h3>Phonorama — A pronunciation support tool</h3>
