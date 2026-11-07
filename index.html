@@ -40,7 +40,7 @@
         <div class="info-item"><h3>Master 2 – TAL</h3><p>Université Grenoble Alpes</p></div>
         <div class="info-item"><h3>NLP • IA • Linguistique</h3><p>Programmation et traitement de textes et de la parole</p></div>
         <div class="info-item"><h3>Langues</h3><p>Français • Anglais • Persan</p></div>
-        <div class="info-item"><h3>Domaines d’intérêt</h3><p>LLMs • RAG • IA appliquée • Développement de solutions linguistiques</p></div>
+        <div class="info-item"><h3>Domaines d’intérêt</h3><p>LLMs • RAG • Agents IA • IA appliquée • Développement de solutions linguistiques</p></div>
       </aside>
     </div>
   </header>
@@ -64,17 +64,31 @@
         </div>
         <div class="card">
           <h3>Apprentissage automatique et NLP</h3>
-          <p>Classification supervisée de textes, expérimentation avec des modèles Transformers, évaluation des prédictions</p>
+          <p>Classification supervisée de textes, expérimentation avec des modèles Transformers, évaluation des prédictions, RAG et agents LLM avec appel d’outils</p>
         </div>
         <div class="card">
           <h3>Bibliothèques et outils utilisés</h3>
-          <p>Pandas, NLTK, spaCy, Hugging Face Transformers, JiWER, Jupyter Notebook, Git/GitHub, SQLite</p>
+          <p>Pandas, NLTK, spaCy, Hugging Face Transformers, JiWER, LangChain, ChromaDB, Gradio, WNTR, Jupyter Notebook, Git/GitHub, SQLite</p>
         </div>
       </div>
     </section>
 
     <section id="projects" class="section reveal">
-      <h2>Projets universitaires</h2>
+      <h2>Projets</h2>
+
+      <div class="project-card">
+        <h3>Assistant EPANET – RAG et agent IA pour la simulation hydraulique</h3>
+        <p>
+          Projet personnel : prototype d’assistant pour les utilisateurs d’EPANET, le logiciel de simulation des réseaux de distribution d’eau de l’EPA. Pour chaque question, un agent LLM décide s’il doit chercher dans le manuel EPANET 2.2 (avec citation des pages), lancer une simulation hydraulique du réseau d’exemple Net3 avec WNTR, ou combiner les deux. </p><p class="project-contribution"><strong>Réalisation :</strong> pipeline RAG (embeddings multilingues, ChromaDB), description des outils en JSON Schema, boucle d’agent avec limite de tours, interface Gradio et tests documentés.
+        </p>
+        <span class="badge">Python</span>
+        <span class="badge">LangChain</span>
+        <span class="badge">ChromaDB</span>
+        <span class="badge">Agents LLM</span>
+        <span class="badge">WNTR</span>
+        <span class="badge">Gradio</span>
+        <p><a href="https://github.com/zohre-shafiee/epanet-assistant" target="_blank" rel="noopener noreferrer">Voir sur GitHub ↗</a></p>
+      </div>
 
       <div class="project-card">
         <h3>Phonorama – Application web d’analyse phonologique</h3>
