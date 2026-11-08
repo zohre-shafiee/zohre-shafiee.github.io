@@ -168,7 +168,7 @@ body.cv-page .cv-sheet section p .project-tools{white-space:normal}
 
 /* CV print: lighter top of the page (space above and inside the header) */
 @media print{
-  body.cv-page .cv-sheet{padding-top:8mm}
+  body.cv-page .cv-sheet{padding:8mm 8mm 0}
   body.cv-page .cv-sheet h1{margin:0 0 8px}
   body.cv-page .cv-sheet header p{margin:7px 0}
   body.cv-page .cv-sheet header{margin-bottom:20px}
