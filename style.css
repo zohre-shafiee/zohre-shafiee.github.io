@@ -166,5 +166,10 @@ body.cv-page .cv-sheet section p .project-tools{white-space:normal}
 .education-link h3,.education-link p{text-decoration:none}
 
 
-/* CV print: more space between the header and the Profil section */
-@media print{body.cv-page .cv-sheet header{margin-bottom:18px}}
+/* CV print: lighter top of the page (space above and inside the header) */
+@media print{
+  body.cv-page .cv-sheet{padding-top:8mm}
+  body.cv-page .cv-sheet h1{margin:0 0 8px}
+  body.cv-page .cv-sheet header p{margin:7px 0}
+  body.cv-page .cv-sheet header{margin-bottom:20px}
+}
